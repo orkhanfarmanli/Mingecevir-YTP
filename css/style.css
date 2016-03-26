@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+    src: url(../fonts/Lato-Regular.woff);
+    src: url(../fonts/Lato-Regular.woff2);
+}
+
+*{
+  font-size: 2vmin;
+  font-family: Lato;
+}
+
+html, body{
+  overflow: hidden;
+}
+
+.contentBox{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+.content{
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+.content div{
+  transition: 0.3s all ease;
+}
+
+.content .infoCol:nth-child(odd){
+  background: rgba(11, 73, 125, 0.8);
+}
+
+.content .infoCol:nth-child(even){
+  background: rgba(20, 126, 180, 0.8);
+
+}
+
+.content .infoCol:nth-child(odd):hover{
+  background: rgba(11, 73, 125, 0.2);
+  -moz-box-shadow:    inset 0 0 25px #282b2a;
+  -webkit-box-shadow: inset 0 0 25px #282b2a;
+  box-shadow:         inset 0 0 25px #282b2a;
+}
+.content .infoCol:nth-child(even):hover{
+  background: rgba(20, 126, 180, 0.2);
+  -moz-box-shadow:    inset 0 0 25px #282b2a;
+  -webkit-box-shadow: inset 0 0 25px #282b2a;
+  box-shadow:         inset 0 0 25px #282b2a;
+}
+
+
+
+.backImg{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.infoCol{
+  width: 20%;
+  height: inherit;
+  float: left;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+}
+.infoCol i{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.infoCol a{
+  color: white;
+  text-decoration: none;
+}
+.infoCol span{
+  font-size: 15px;
+}
+.modal{
+  text-align: center;
+  padding: 0!important;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.modal-dialog{
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+
+}
+.modal-content{
+  border-radius: 0%;
+  height: 600px;
+}
+.modal-header{
+  border: none;
+  text-align: center;
+}
+
+.modal-body{
+  z-index: 100;
+  height: 500px;
+  overflow-x: hidden;
+}
+
+
+.modalContents{
+  width: 100%;
+  height: 100%;
+  padding: 0 5% 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.close{
+  font-size: 25px;
+}
+
+
+.aboutInfo{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aboutGallery{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.aboutGallery img{
+  width: 24%;
+  height: 150px;
+  margin-top: 1%;
+}
+
+
+.whyMinge ul {
+    list-style: none;
+    padding: 0px;
+    font-size: 18px;
+}
+.whyMinge ul li{
+  margin-bottom: 20px;
+}
+.whyMinge ul li::before{
+
+}
+
+.whyMinge i{
+  background: green;
+  border-radius: 100%;
+  color: white;
+  padding: 3px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.testText{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.testText i{
+  height: 100%;
+}
+
+/* hightech logo */
+
+.highTechLogo{
+  width: 180px;
+  height: auto;
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+}
+
+.highTechLogo img{
+  width: 100%;
+}
+
+/* hightech logo end*/
